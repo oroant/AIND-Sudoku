@@ -1,4 +1,4 @@
-from PySudoku import play
+import PySudoku
 
 def visualize_assignments(assignments):
     """ Visualizes the set of assignments created by the Sudoku AI"""
@@ -14,4 +14,4 @@ def visualize_assignments(assignments):
                 filtered_assignments.append(assignments[i])
         last_assignment = assignments[i]
 
-    play(filtered_assignments)
+    PySudoku.play(filtered_assignments)
